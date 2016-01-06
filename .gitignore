@@ -4,6 +4,7 @@
 azure.err
 iisnode.yml
 server/recipes/apiKeys.js
+server/user/emailAPIKey.js
 
 # Icon must ends with two \r.
 Icon

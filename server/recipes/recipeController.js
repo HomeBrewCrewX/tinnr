@@ -6,7 +6,7 @@ var url = require('url');
 var Q = require('q');
 // commented out for deployment 
 // uncomment for development
-// var apiInfo = require('./apiKeys.js');
+var apiInfo = require('./apiKeys.js');
 
 module.exports = {
   getRecipes: function(req, res, next) {

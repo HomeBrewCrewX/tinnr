@@ -15,5 +15,9 @@ angular.module('tinnr.meals', [])
         });
     };
 
+    $scope.getList = function(ingredients) {
+      Meals.getList(ingredients);
+    }
+
     $scope.getMeals();
   }]);

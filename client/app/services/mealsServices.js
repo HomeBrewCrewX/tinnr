@@ -25,5 +25,16 @@ angular.module('tinnr.mealsServices', [])
       });
     };
 
+    meals.getList = function (ingredients) {
+      return $http({
+        method: 'POST',
+        url: '/api/users/email',
+        data: ingredients
+      })
+      .then(function (res) {
+        return res;
+      });
+    };
+
     return meals; 
   }]);
