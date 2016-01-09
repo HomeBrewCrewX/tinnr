@@ -1,8 +1,8 @@
-# tinnr
+# tinnr+
 What's for dinner?
 Tinnr, it's for dinner.
 
-[Tinnr](www.tinnr.com)
+[Tinnr+](www.tinnr.com)
 
 ## Introduction
 
@@ -46,12 +46,14 @@ We used Yummly's API for our recipes.
 - Users
 - Recipes
 - Each user can save recipes
+- Swiping for recipes
 - Clicking on the saved recipe will forward you to the recipe
 - Can filter by Diet, Cuisine, and Course
 - Preferences are saved to the User
+- Calendar 
+- Email grocery list
 
 ## In progress
-- Swiping for recipes
 - Compile all saved recipe ingredients to make shopping list
 - Show number of user favorites on saved recipes (We already iterate the numberOfSaves in the recipe Schema)
 - Refactor to a SQL database for larger production scale
@@ -69,9 +71,8 @@ We used airbnb's es5 style guide at the following link
 [airbnb es5 style guide](https://github.com/airbnb/javascript/tree/master/es5)
 
 ## Contributors
-- Elliot Chi ([elliotschi](https://github.com/elliotschi))
-- Peter Kaiser ([pkaiserui](https://github.com/pkaiserui))
-- Ian B. ([ibari](https://github.com/ibari))
-- Sean Gibson ([seanagibson](https://github.com/seanagibson))
+- __Product Owner__: [Yale Yuen](https://github.com/Ycube)
+ - __Scrum Master__: [Michael Berber](https://github.com/mickberber)
+ - __Development Team Members__: [Anthony Bibbs](https://github.com/abibbs), [Sergey Piterman](https://github.com/spiterman)
 
-MKS Greenfield Project
+MKS Legacy Project
