@@ -1,12 +1,11 @@
-# tinnr
-What's for dinner?
-Tinnr, it's for dinner.
+# tinnr+
+Dinner done right!
 
-[Tinnr](www.tinnr.com)
+[Tinnr+](http://tinnrplusplus.herokuap.com)
 
 ## Introduction
 
-Tinnr is a project dedicated to offering users with many different recipe choices. Our goal is for people to explore new recipes that fit any occasion.
+Tinnr+ is a project dedicated to offering users with many different recipe choices. Our goal is for people to explore new recipes that fit any occasion.
 
 ## Getting Started
 
@@ -16,6 +15,10 @@ bower install
 npm install
 mongod
 nodemon server/server.js
+```
+Note: Rebuild application using Gulp upon any changes to front-end (angular).
+```
+gulp build
 ```
 
 Note: To use mongod, you must set the database path. You can do so with the following command.
@@ -48,10 +51,12 @@ We used Yummly's API for our recipes.
 - Each user can save recipes
 - Clicking on the saved recipe will forward you to the recipe
 - Can filter by Diet, Cuisine, and Course
-- Preferences are saved to the User
+- Meal preferences saved for individual Users
+- Swipe to Add (right) or Pass (left) on a recipe
+- Email recipes to yourself for later
+- User calendar for adding meals
 
 ## In progress
-- Swiping for recipes
 - Compile all saved recipe ingredients to make shopping list
 - Show number of user favorites on saved recipes (We already iterate the numberOfSaves in the recipe Schema)
 - Refactor to a SQL database for larger production scale
@@ -69,9 +74,8 @@ We used airbnb's es5 style guide at the following link
 [airbnb es5 style guide](https://github.com/airbnb/javascript/tree/master/es5)
 
 ## Contributors
-- Elliot Chi ([elliotschi](https://github.com/elliotschi))
-- Peter Kaiser ([pkaiserui](https://github.com/pkaiserui))
-- Ian B. ([ibari](https://github.com/ibari))
-- Sean Gibson ([seanagibson](https://github.com/seanagibson))
+ - __Product Owner__: [Sergey Piterman](https://github.com/spiterman)
+ - __Scrum Master__:  [Anthony Bibbs](https://github.com/abibbs)
+ - __Development Team Members__: [Michael Berber](https://github.com/mickberber), [Yale Yuen](https://github.com/Ycube)
 
 MKS Greenfield Project

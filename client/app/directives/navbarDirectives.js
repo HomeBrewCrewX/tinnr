@@ -1,5 +1,5 @@
 angular.module('tinnr.navbarDirectives', [])
-  .directive('navbar', ['Auth', function(Auth) {
+  .directive('navbar', ['Auth','User', function(Auth, User) {
     return {
       restrict: 'E',
       templateUrl: 'app/partials/_navbar.html',

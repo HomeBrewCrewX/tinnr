@@ -1,0 +1,29 @@
+<div class="container-fluid main">
+  <alerts></alerts>
+  <h1>My Calendar</h1>
+    <div class="row" ng-show="calendarMeals.length === 0">
+      <div class="alert alert-info" role="alert">Select some meals to get started.</div>
+      <a class="btn btn-danger btn-md" href="#" ui-sref="meals" role="button">Get Started</a>
+    </div>
+    <div ng-repeat="day in daysOfWeek" class="row">
+      <h2>{{day}}</h2>
+      <div ng-repeat="meal in organizedMeals[day]" ng-hide="!meal" class="col-md-4 meal">
+        <div class="thumbnail">
+            <a href="http://www.yummly.com/recipe/external/{{meal.id}}" target="_new">
+              <img ng-src="{{meal.imageUrlsBySize[90]}}" alt="{{meal.recipeName}}">
+            </a>
+            <div class="caption">
+              <a href="http://www.yummly.com/recipe/external/{{meal.id}}" target="_new">
+              </a>
+                <button type="button" 
+                      class="btn btn-default" 
+                      ng-click="removeMeal(meal)">
+                  Remove Meal
+                </button>
+              <h4>{{meal.recipeName}}</h4>
+              <h4>{{meal.selectedMeal}}</h4>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>

@@ -1,5 +1,30 @@
 <div class="container-fluid main">
+  <alerts></alerts>
   <h1>My Meals</h1>
+  <form class="form-preferences">
+    <div class="row row-flex">
+        <div class="form-group col-xs-6">
+        <label for="mealDay">Day</label>
+        <select id="allowedDiet" 
+                class="form-control"
+                ng-model="selectedDay" 
+                ng-change="getSelectedDay(selectedDay)"
+                >
+              <option value={{day}} ng-repeat="day in days">{{day}}</option>
+        </select>
+        </div>
+        <div class="form-group col-xs-6">
+        <label for="calendar">Meal</label>
+        <select id="timeOfMeal" 
+                class="form-control"
+                ng-model="selectedMeal" 
+                ng-change="getSelectedMeal(selectedMeal)"
+                >
+              <option value={{meal}} ng-repeat="meal in threeMeals">{{meal}}</option>
+          </select>
+        </div>
+      </div>
+    </form>
     <div class="row row-flex" ng-repeat="row in meals">
         <div class="col-xs-6 col-md-3 meal" ng-repeat="meal in row">
           <div class="thumbnail">
@@ -15,6 +40,17 @@
                       class="btn btn-default btn-ingredients" 
                       ng-click="isCollapsed = !isCollapsed">
                 Ingredients
+              </button>
+                <a class="btn btn-primary" ng-click="addCal(meal)" role="button">Add to Cal</a>
+              <button type="button" 
+                      class="btn btn-default btn-ingredients" 
+                      ng-click="getList(meal.ingredients)">
+                Email List
+              </button>
+              <button type="button" 
+                      class="btn btn-default" 
+                      ng-click="removeMeal(meal)">
+                Remove Meal
               </button>
               <div uib-collapse="isCollapsed" ng-init="isCollapsed = true">
                 <ol>

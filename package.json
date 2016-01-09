@@ -1,10 +1,12 @@
 {
   "dependencies": {
+    "angular-hammer": "^2.1.10",
     "babel-eslint": "^4.1.6",
     "bcrypt": "^0.8.5",
     "body-parser": "^1.14.2",
     "bower": "^1.7.1",
     "browser-sync": "^2.10.1",
+    "calendar": "^0.1.0",
     "chai": "^3.4.1",
     "eslint": "^1.10.3",
     "eslint-config-airbnb-es5": "^1.0.8",
@@ -14,20 +16,22 @@
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
     "gulp-eslint": "^1.1.1",
+    "gulp-mocha": "^2.2.0",
     "gulp-nodemon": "^2.0.4",
     "gulp-sass": "^2.1.1",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.5.1",
     "gulp-util": "^3.0.7",
-    "gulp-mocha": "^2.2.0",
     "jwt-simple": "^0.4.0",
     "mocha": "^2.3.4",
     "mongoose": "^4.3.3",
     "morgan": "^1.6.1",
+    "node-calendar": "^0.1.4",
     "q": "^1.0.1",
     "request": "^2.67.0",
     "rimraf": "^2.4.4",
     "run-sequence": "^1.1.5",
+    "sendgrid": "^2.0.0",
     "underscore": "^1.8.3",
     "url": "^0.11.0"
   },
@@ -50,7 +54,10 @@
       "func-names": 0
     }
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-util": "^3.0.7"
+  },
   "engines": {
     "node": "5.0.0"
   },
