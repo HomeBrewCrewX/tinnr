@@ -28,5 +28,17 @@ angular.module('tinnr.recipesServices', [])
       });
     };
 
+    recipes.showRecipes = function () {
+      return $http({
+        metod: 'GET',
+        url: '/api/recipes',
+      })
+      .then(function (res) {
+        return res.data;
+      }, function (res) {
+        console.error('Error: ', res);
+      });
+    };
+
     return recipes;
   }]);

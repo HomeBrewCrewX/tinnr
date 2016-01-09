@@ -1,12 +1,10 @@
-# tinnr
-What's for dinner?
-Tinnr, it's for dinner.
-
-[Tinnr](www.tinnr.com)
+# tinnr+
+Dinner done right!
+[Tinnr+](http://tinnrplusplus.herokuapp.com)
 
 ## Introduction
 
-Tinnr is a project dedicated to offering users with many different recipe choices. Our goal is for people to explore new recipes that fit any occasion.
+Tinnr+ is a project dedicated to offering users with many different recipe choices. Our goal is for people to explore new recipes that fit any occasion.
 
 ## Getting Started
 
@@ -16,6 +14,10 @@ bower install
 npm install
 mongod
 nodemon server/server.js
+```
+Note: Rebuild application using Gulp upon any changes to front-end (angular).
+```
+gulp build
 ```
 
 Note: To use mongod, you must set the database path. You can do so with the following command.
@@ -33,7 +35,7 @@ We separated our files into 3 different folders: Client, Server, and Tests. With
 
 ## Choice of Technologies
 
-For this project, we have used AngularJS, Twitter Bootstrap, font awesome, Sass, Lo-dash for our front end and Node.js, Express, and MongoDB for our server and database. We also used Gulp for automation of our workflow. For testing we used mocha.
+For this project, we have used AngularJS, Twitter Bootstrap, font awesome, Sass, Lo-dash, Hammer, SendGrid for our front end and Node.js, Express, and MongoDB for our server and database. We also used Gulp for automation of our workflow. For testing we used mocha.
 
 We used MongoDB for the document storage of the Users and the Recipes. We used an ORM called mongoose, which is an npm
 module, which gives us easier access to our database. Refer to this link to learn more about mongoose [Mongoose Docs](http://mongoosejs.com/). We used MongoLab as a heroku addon when deploying our app.
@@ -46,12 +48,15 @@ We used Yummly's API for our recipes.
 - Users
 - Recipes
 - Each user can save recipes
+- Swiping for recipes
 - Clicking on the saved recipe will forward you to the recipe
 - Can filter by Diet, Cuisine, and Course
-- Preferences are saved to the User
+- Meal preferences saved for individual Users
+- Swipe to Add (right) or Pass (left) on a recipe
+- Email recipes to yourself for later
+- User calendar for adding meals
 
 ## In progress
-- Swiping for recipes
 - Compile all saved recipe ingredients to make shopping list
 - Show number of user favorites on saved recipes (We already iterate the numberOfSaves in the recipe Schema)
 - Refactor to a SQL database for larger production scale
@@ -69,9 +74,8 @@ We used airbnb's es5 style guide at the following link
 [airbnb es5 style guide](https://github.com/airbnb/javascript/tree/master/es5)
 
 ## Contributors
-- Elliot Chi ([elliotschi](https://github.com/elliotschi))
-- Peter Kaiser ([pkaiserui](https://github.com/pkaiserui))
-- Ian B. ([ibari](https://github.com/ibari))
-- Sean Gibson ([seanagibson](https://github.com/seanagibson))
+ - __Product Owner__: [Sergey Piterman](https://github.com/spiterman)
+ - __Scrum Master__:  [Anthony Bibbs](https://github.com/abibbs)
+ - __Development Team Members__: [Michael Berber](https://github.com/mickberber), [Yale Yuen](https://github.com/Ycube)
 
-MKS Greenfield Project
+MKS Legacy Project

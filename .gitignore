@@ -4,6 +4,7 @@
 azure.err
 iisnode.yml
 server/recipes/apiKeys.js
+server/user/emailAPIKey.js
 
 # Icon must ends with two \r.
 Icon
@@ -26,6 +27,13 @@ pids
 
 # Dependency directories
 node_modules
+client/lib/angular
+client/lib/angular-bootstrap
+client/lib/angular-ui-router
+client/lib/bootstrap-sass
+client/lib/font-awesome
+client/lib/jquery
+client/lib/lodash
 client/lib
 
 #Build 

@@ -1,5 +1,5 @@
 angular.module('tinnr.auth', [])
-  .controller('AuthController', ['$scope', '$window', '$state', 'Auth', 'User', function ($scope, $window, $state, Auth, User) {
+  .controller('AuthController', ['$rootScope', '$scope', '$window', '$state', 'Auth', 'User', function ($rootScope, $scope, $window, $state, Auth, User) {
     $scope.user = User.data;
     $scope.error = null;
 
@@ -7,6 +7,9 @@ angular.module('tinnr.auth', [])
       Auth.signin($scope.user)
         .then(function (user) { 
           User.data = user;
+          $rootScope.username = user.username;
+          console.log(user);
+
           $window.localStorage.setItem('com.tinnr', user.token);
           $state.go('meals');
         })

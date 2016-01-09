@@ -15,6 +15,7 @@ var UserSchema = new mongoose.Schema({
   },
   salt: String,
   savedRecipes: [],
+  calendarRecipes: [], //for calendar 
   dietPreferences: {
     type: Object,
     default: {}

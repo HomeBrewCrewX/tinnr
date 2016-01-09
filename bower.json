@@ -20,6 +20,7 @@
     "angular-bootstrap": "~0.14.3",
     "bootstrap-sass": "~3.3.6",
     "lodash": "~3.10.1",
-    "font-awesome": "fontawesome#~4.5.0"
+    "font-awesome": "fontawesome#~4.5.0",
+    "angular-bootstrap-calendar": "~0.18.0"
   }
 }
